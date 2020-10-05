@@ -24,11 +24,11 @@ bool contains_equal_columns(int height, int width, const int array[height][width
       }
     }
   }
-  // if none or more than 2 columns are the same, res=false
-  if(count==1) {
-    res = true;
-  }else {
+  // if no columns are the same, res=false
+  if(count==0) {
     res = false;
+  }else {
+    res = true;
   }
   return res;
 }
